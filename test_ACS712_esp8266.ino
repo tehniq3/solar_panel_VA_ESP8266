@@ -26,7 +26,7 @@ void loop(){
  
  RawValue = analogRead(analogIn);
  Voltage = (RawValue / 1024.0) * Vref; // Gets you mV
- Voltage2 = (R3+R3)/R3 * Voltage;
+ Voltage2 = (R4+R3)/R3 * Voltage;
  Amps = ((Voltage2 - ACSoffset) / mVperAmp);
  
  Serial.print("Raw Value = " ); // shows pre-scaled value 
